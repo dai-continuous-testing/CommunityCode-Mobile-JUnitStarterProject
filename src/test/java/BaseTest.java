@@ -22,8 +22,8 @@ public class BaseTest {
 	
 	private void initCloudProperties() throws IOException {
 		cloudProperties = new Properties();
-		FileReader fr = new FileReader("cloud.properties");
-		cloudProperties.load(fr);
-		fr.close();
+		try (FileReader fr = new FileReader("cloud.properties")) {
+			cloudProperties.load(fr);
+		}
 	}
 }
