@@ -39,7 +39,7 @@ dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 ```
 * For iOS:
 ```java
-dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 ```
 for more ways to upload your application to the cloud, [see here](https://docs.experitest.com/display/TE/Native+Applications+Testing).
@@ -51,6 +51,7 @@ In the provided examples we have used the desired capabilities to set the test n
 [See here](https://docs.experitest.com/display/TE/Capabilties+in+Appium+Based+Tests) how to customise desired capabilities for you tests.
 
 ### Documentation
-To find out more about CT usage, features and best practices, visit our [Documentation](https://docs.experitest.com/display/TE/Test+Execution+Home) 
+To find out more about CT usage, features and best practices, visit our online [documentation](https://docs.experitest.com/display/TE/Test+Execution+Home) 
 
 ### Support
+If you've encountered an issue that is not covered here or in our online documentation, contact us at [support@digital.ai](mailto:support@digital.ai)
