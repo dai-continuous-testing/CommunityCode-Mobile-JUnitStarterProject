@@ -22,6 +22,7 @@ public class IOSExampleTest extends BaseTest {
 		dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
 		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+		dc.setCapability("appiumVersion", "1.22.3");
 		driver = new IOSDriver<>(new URL(new URL(getProperty("cloud.url")), "/wd/hub"), dc);
 	}
 	
