@@ -1,5 +1,5 @@
 # CommunityCode Mobile: JUnit Starter Project
-
+The JUnit Starter Project enables you to quickly run tests with minimal coding. The project itself compiles and can be run immediately.
 ## Setting Up Authentication
 
 To set up authentication, update the following parameters in [cloud.properties](cloud.properties):
@@ -45,7 +45,7 @@ In these examples we use the desired capabilities to set the test name and choos
 See [Capabilities in Appium Based Tests](https://docs.experitest.com/display/TE/Capabilties+in+Appium+Based+Tests) to learn how to customize the desired capabilities for your tests.
 
 ## Documentation
-To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.experitest.com/display/TE/Test+Execution+Home) 
+To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.experitest.com/display/TE/Test+Execution+Home). 
 
 ## Support
 If you encounter an issue that is not covered here or in our online documentation, contact us at [support@digital.ai](mailto:support@digital.ai).
