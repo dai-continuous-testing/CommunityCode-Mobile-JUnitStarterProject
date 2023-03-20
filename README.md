@@ -23,7 +23,7 @@ To upload your own application to cloud:
 3. Click Upload.
 4. Click the application file to upload.
 
-In your tests, change *com.experitest.ExperiBank* (and activity if needed) in desired capabilities for your application.
+In your tests, set *com.experitest.ExperiBank* (and activity if needed) to the desired capabilities for your application.
 
 * For Android:
 ```
