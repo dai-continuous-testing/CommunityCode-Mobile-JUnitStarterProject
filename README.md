@@ -22,7 +22,7 @@ To run the tests in this project, run the following on the command line:
 
 ## Uploading the Application to the Cloud
 
-The example tests in this project use a demo application. 
+The example tests in native_demo in this project use a demo application. 
 To upload your own application to cloud:
 1. Log in to the cloud using a browser.
 1. In the left menu click Applications.

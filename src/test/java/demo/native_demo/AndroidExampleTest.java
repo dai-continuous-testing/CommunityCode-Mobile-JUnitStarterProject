@@ -1,3 +1,6 @@
+package demo.native_demo;
+
+import demo.BaseTest;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -5,10 +8,11 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AndroidExampleTest extends BaseTest {
 	
@@ -18,7 +22,7 @@ public class AndroidExampleTest extends BaseTest {
 	public void setUp() throws MalformedURLException {
 		dc.setCapability("testName", "Android Native Demo");
 		dc.setCapability("accessKey", getProperty("cloud.accessKey"));
-		dc.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
+		dc.setCapability("deviceQuery", "@os='android'");
 		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
 		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
@@ -27,11 +31,13 @@ public class AndroidExampleTest extends BaseTest {
 	}
 	
 	@Test
-	public void quickStartAndroidNativeDemo() {
+	public void androidNativeDemo() {
 		driver.rotate(ScreenOrientation.PORTRAIT);
 		driver.findElement(By.id("com.experitest.ExperiBank:id/usernameTextField")).sendKeys("company");
 		driver.findElement(By.id("com.experitest.ExperiBank:id/passwordTextField")).sendKeys("company");
 		driver.findElement(By.id("com.experitest.ExperiBank:id/loginButton")).click();
+		new WebDriverWait(driver, 10)
+			.until(ExpectedConditions.presenceOfElementLocated(By.id("com.experitest.ExperiBank:id/makePaymentButton")));
 		driver.findElement(By.id("com.experitest.ExperiBank:id/makePaymentButton")).click();
 		driver.findElement(By.id("com.experitest.ExperiBank:id/phoneTextField")).sendKeys("0501234567");
 		driver.findElement(By.id("com.experitest.ExperiBank:id/nameTextField")).sendKeys("John Snow");
