@@ -9,7 +9,7 @@ To set up the project:
    cd CommunityCode-Mobile-JUnitStarterProject
    ```   
 1. Set up authentication by updating the following parameters in [cloud.properties](cloud.properties):
-   * cloud.url - Url for the cloud the test would run in. For example, https://company.experitest.com/
+   * cloud.url - Url for the cloud the test would run in. For example, https://company.digitalai.com/
    * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.digital.ai/bundle/TE/page/obtaining_access_key.html) to learn how to obtain an access key. 
 
 ## Running Tests
@@ -29,18 +29,18 @@ To upload your own application to cloud:
 1. Click Upload.
 1. Click the application file to upload.
 
-In your tests, set *com.experitest.ExperiBank* (and activity if needed) to the desired capabilities for your application.
+In your tests, set *com.digitalai.ExperiBank* (and activity if needed) to the desired capabilities for your application.
 
 * For Android:
 ```
-dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
-dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
+dc.setCapability(MobileCapabilityType.APP, "cloud:com.digitalai.ExperiBank/.LoginActivity");
+dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.digitalai.ExperiBank");
 dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 ```
 * For iOS:
 ```
-dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
-dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+dc.setCapability(MobileCapabilityType.APP, "cloud:com.digitalai.ExperiBank");
+dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.digitalai.ExperiBank");
 ```
 For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.digital.ai/bundle/TE/page/native_applications_testing.html).
 
