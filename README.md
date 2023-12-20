@@ -9,7 +9,7 @@ To set up the project:
    cd CommunityCode-Mobile-JUnitStarterProject
    ```   
 1. Set up authentication by updating the following parameters in [cloud.properties](cloud.properties):
-   * cloud.url - Url for the cloud the test would run in. For example, https://company.digitalai.com/
+   * cloud.url - Url for the cloud the test would run in. For example, https://company.experitest.com/
    * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.digital.ai/bundle/TE/page/obtaining_access_key.html) to learn how to obtain an access key. 
 
 ## Running Tests
