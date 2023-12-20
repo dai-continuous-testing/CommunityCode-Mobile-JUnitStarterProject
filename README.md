@@ -10,7 +10,7 @@ To set up the project:
    ```   
 1. Set up authentication by updating the following parameters in [cloud.properties](cloud.properties):
    * cloud.url - Url for the cloud the test would run in. For example, https://company.experitest.com/
-   * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435) to learn how to obtain an access key. 
+   * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.digital.ai/bundle/TE/page/obtaining_access_key.html) to learn how to obtain an access key. 
 
 ## Running Tests
 
@@ -42,16 +42,16 @@ dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 ```
-For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.experitest.com/display/TE/Native+Applications+Testing).
+For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.digital.ai/bundle/TE/page/native_applications_testing.html).
 
 ## Desired Capabilities
 
 Continuous Cloud Testing expands Appium's capabilities and allows better control over the device and test. 
 In these examples we use the desired capabilities to set the test name and choose devices to run on, as well as set the application as shown above.
-See [Capabilities in Appium Based Tests](https://docs.experitest.com/display/TE/Capabilties+in+Appium+Based+Tests) to learn how to customize the desired capabilities for your tests.
+See [Capabilities in Appium Based Tests](https://docs.digital.ai/bundle/TE/page/appium_oss_supported_capabilities.html) to learn how to customize the desired capabilities for your tests.
 
 ## Documentation
-To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.experitest.com/display/TE/Test+Execution+Home). 
+To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.digital.ai/bundle/TE/page/test_execution_home.html). 
 
 ## Support
 If you encounter an issue that is not covered here or in our online documentation, contact us at [support@digital.ai](mailto:support@digital.ai).
