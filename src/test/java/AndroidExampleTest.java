@@ -19,8 +19,8 @@ public class AndroidExampleTest extends BaseTest {
 		dc.setCapability("testName", "Android Native Demo");
 		dc.setCapability("accessKey", getProperty("cloud.accessKey"));
 		dc.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
-		dc.setCapability(MobileCapabilityType.APP, "cloud:com.digitalai.ExperiBank/.LoginActivity");
-		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.digitalai.ExperiBank");
+		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
+		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 		dc.setCapability("appiumVersion", "1.22.3");
 		driver = new AndroidDriver<>(new URL(new URL(getProperty("cloud.url")), "/wd/hub"), dc);
@@ -29,15 +29,15 @@ public class AndroidExampleTest extends BaseTest {
 	@Test
 	public void quickStartAndroidNativeDemo() {
 		driver.rotate(ScreenOrientation.PORTRAIT);
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/usernameTextField")).sendKeys("company");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/passwordTextField")).sendKeys("company");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/loginButton")).click();
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/makePaymentButton")).click();
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/phoneTextField")).sendKeys("0501234567");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/nameTextField")).sendKeys("John Snow");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/amountTextField")).sendKeys("50");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/countryTextField")).sendKeys("'Switzerland'");
-		driver.findElement(By.id("com.digitalai.ExperiBank:id/sendPaymentButton")).click();
+		driver.findElement(By.id("com.experitest.ExperiBank:id/usernameTextField")).sendKeys("company");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/passwordTextField")).sendKeys("company");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/loginButton")).click();
+		driver.findElement(By.id("com.experitest.ExperiBank:id/makePaymentButton")).click();
+		driver.findElement(By.id("com.experitest.ExperiBank:id/phoneTextField")).sendKeys("0501234567");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/nameTextField")).sendKeys("John Snow");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/amountTextField")).sendKeys("50");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/countryTextField")).sendKeys("'Switzerland'");
+		driver.findElement(By.id("com.experitest.ExperiBank:id/sendPaymentButton")).click();
 		driver.findElement(By.id("android:id/button1")).click();
 	}
 	
