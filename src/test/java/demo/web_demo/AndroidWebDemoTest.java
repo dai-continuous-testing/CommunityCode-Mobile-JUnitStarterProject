@@ -9,11 +9,14 @@ import java.net.URL;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class AndroidWebDemoTest extends BaseTest {
 	
 	protected AndroidDriver<AndroidElement> driver = null;

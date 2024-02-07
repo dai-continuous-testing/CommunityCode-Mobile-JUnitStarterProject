@@ -10,9 +10,12 @@ import java.net.URL;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class IOSExampleTest extends BaseTest {
 	
 	protected IOSDriver<IOSElement> driver = null;
@@ -27,7 +30,7 @@ public class IOSExampleTest extends BaseTest {
 		dc.setCapability("appiumVersion", "1.22.3");
 		driver = new IOSDriver<>(new URL(new URL(getProperty("cloud.url")), "/wd/hub"), dc);
 	}
-	
+
 	@Test
 	public void iOSNativeDemo() {
 		driver.rotate(ScreenOrientation.PORTRAIT);

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.native_demo.AndroidExampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-07T09:09:31" hostname="Yaras-MacBook-Pro.local" time="101.195">
+  <properties/>
+  <testcase name="androidNativeDemo()" classname="demo.native_demo.AndroidExampleTest" time="101.195"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
