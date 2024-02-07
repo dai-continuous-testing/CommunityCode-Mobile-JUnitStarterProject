@@ -10,9 +10,12 @@ import java.net.URL;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class IOSExampleTest extends BaseTest {
 	
 	protected IOSDriver<IOSElement> driver = null;

@@ -16,8 +16,14 @@ To set up the project:
 
 To run the tests in this project, run the following on the command line: 
 
+Sequential:
 ```bash
 ./gradlew test
+```
+
+Parallel:
+```bash
+./gradlew test -PparallelTests
 ```
 
 ## Uploading the Application to the Cloud
