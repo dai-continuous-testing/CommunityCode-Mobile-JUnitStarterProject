@@ -18,5 +18,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    systemProperty 'junit.jupiter.execution.parallel.enabled',  project.hasProperty('parallel')
+    systemProperty 'junit.jupiter.execution.parallel.enabled',  project.hasProperty('parallelTests')
 }
